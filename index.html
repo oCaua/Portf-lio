@@ -1,0 +1,104 @@
+<!--
+ * Pagina inicial do portifólio, onde aqui tem sobre o usuario e os contatos.
+ * Data: 12/02/2026
+ * Por: Cauã de Oliveira
+ * Atualizado: 09/03/2026
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta viewport garante que o layout seja responsivo em mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Cauã de Oliveira</title>
+
+    <!-- caminho para o static -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   
+</head>
+
+<body>
+
+    <!--////////////////////PRIMEIRA ABA (HEADER) //////////////////////////-->
+    <header>
+
+       <div class="welcome">
+        <h3>Bem-vindo</h3>
+        <p>ao</p>
+        <!---------EFEITO TEXTO----------->
+        <h2 class="text" id="text">Meu Portfólio</h2> 
+        </div>
+        <!--------------------------------------------------------------------->
+
+    </header>
+
+<main>
+
+    <!--////////////////////SEGUNDA ABA (BODY) //////////////////////////-->
+    <h2 class="me">Sobre mim</h2>
+
+    <section class="sobre-container">
+        <div class="foto">
+            <img src="{{ url_for('static', filename='img/foto.png') }}" alt="Foto de perfil">
+        </div>
+        <p class="sobre">Olá! É um prazer ter você aqui.<br><br>
+            Me chamo Cauã de Oliveira, tenho {{ idade }} anos e sou estudante da Faculdade de Tecnologia de São Paulo (FATEC), unidade de Santana de Parnaíba.<br><br>
+            Estou em constante aprendizado e, neste espaço, apresento alguns dos meus trabalhos desenvolvidos na faculdade, além de projetos pessoais.
+            Fique à vontade para explorar meu portfólio.<br><br>
+            Caso tenha alguma dúvida ou queira entrar em contato comigo, será um prazer te atender.
+        </p>
+            <p class="finalsobre">Sejam bem-vindos!</p>
+    </section>
+
+    <!--////////////////////MINI PROJETOS (QUARTA ABA) //////////////////////////-->
+    <section class="Mini-projetos">
+        <h2>Projetos</h2> 
+
+        <div class ="cards">
+
+        <div class="projeto1">
+                <h3>ALGORITMOS</h3>
+                <img src="static/img/c-programming-icon.png" alt="Imagem do projeto 1">
+                <p>Exercícios desenvolvidos com lógica de programação na linguagem C.</p>
+                <button class="btn-projeto1" onclick="window.location.href='https://github.com/cauaoliveira/algoritmos'">Ver repositório</button>
+        </div>
+
+        <div class="projeto2">
+
+                <h3>POO | Java</h3>
+                <img src="static/img/java-icon.png" alt="Imagem do projeto 2">
+                <p>Projetos desenvolvidos com a linguagem Java, aplicando os conceitos de programação orientada a objetos.</p>
+                <button class="btn-projeto2" onclick="window.location.href='https://github.com/cauaoliveira/poo-java'">Ver repositório</button>
+        </div>
+
+        <div class="projeto3">
+
+                <h3>Scripts MySQL</h3>
+                <img src="static/img/mysql.png" alt="Imagem do projeto 3">
+                <p>Projetos desenvolvidos com a linguagem SQL, aplicando os conceitos de banco de dados.</p>
+                <button class="btn-projeto3" onclick="window.location.href='https://github.com/cauaoliveira/scripts-mysql'">Ver repositório</button>
+        </div>
+            </div>
+            </section>
+</main>
+
+ <!--CONTATOS-->
+    <footer>
+        <h3 class="contatos">Contatos</h3>
+        <div class="social-container">
+            <div class="social-item" onclick="window.location.href='www.linkedin.com/in/caua-oliveira-7246b6227'">
+                <img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="Linkedin" class="linkedin">
+                <p>linkedin</p>
+            </div>
+            <div class="social-item" onclick="window.location.href='https://github.com/cauaoliveira'">
+                <img src="{{ url_for('static', filename='img/git.png') }}" alt="GitHub" class="github">
+                <p>github</p>
+            </div>
+        </div>
+        <p> cauaoliveiraa790@gmail.com | (11) 94178-0932</p>
+    </footer>
+
+   <script src="{{ url_for('static', filename='js/effects.js') }}"></script>
+</body>
+</html>
