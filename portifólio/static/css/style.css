@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ------------ EFEITO ------------- */
+.text{
+  position: relative;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.text::after{
+  content:"_";
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* ------------ HEADER ------------------------------------------------ */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.welcome h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* ------------SOBRE -------------- */
+.sobre-container {
+    padding: 2rem 1rem;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: #0d0d0d;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.me{
+    text-align: center;
+}
+
+.projetos{
+    text-align: center;
+}
+
+.sobre {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.finalsobre {
+    text-align: center;
+    font-size: 25px;
+    text-shadow:   
+    0 0 0.1px #fff,
+    0 0 0.1px #fff,
+    0 0 3px rgb(199, 199, 199),
+    0 0 3px rgb(199, 199, 199);
+}
+
+/* ------------ PROJETOS -------------------------------------------------- */
+.conteudo-container {
+    padding: 2rem 1rem;
+}
+
+.conteudo {
+    display: grid;
+    gap: 1rem;  
+    grid-template-columns: 1fr;
+}
+
+/* ------------ ALGORITMOS ---------------------------------------------- */
+.Mini-projetos {
+    padding: 2rem 1rem;
+    margin-left: 35px;
+    margin-right: 35px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+
+.Mini-projetos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*-------CONTAINER DOS CARDS---------- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.Mini-projetos img {
+  width: 40%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.projeto1,
+.projeto2,
+.projeto3 {
+    background: #0d0d0d;
+    border-radius: 15px;
+    padding: 20px;
+    padding-bottom: 150spx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto1 h3,
+.projeto2 h3,
+.projeto3 h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.projeto1 p,
+.projeto2 p,
+.projeto3 p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Efeito nos botões dos projetos */
+.btn-projeto1,
+.btn-projeto2,
+.btn-projeto3 {
+    padding: 18px 30px;
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin-top: 100px;
+    text-decoration: underline;
+
+}
+
+.btn-projeto1:hover,
+.btn-projeto2:hover,
+.btn-projeto3:hover {
+    transform: scale(1.05) translateY(-4px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+    background-color: #2a2a2a;
+}
+
+/* ------------ RODAPÉ ----------------------------------------------------- */
+footer {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 2rem 1rem;
+
+}
+
+
+footer p {
+    justify-content: center;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.social-item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-item p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* ------------ RESPONSIVO ---------------------------------------------- */
+@media (max-width: 599px) {
+    .sobre-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .Mini-projetos {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .Mini-projetos > div {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 4rem 2rem;
+    }
+    .welcome h3 {
+        font-size: 2rem;
+    }
+    .conteudo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ----------------------------------------------
+ * ANIMAÇÃO DE SCROLL (JS ANIMATE)
+ * ---------------------------------------------- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
