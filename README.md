@@ -1,19 +1,25 @@
-# 🚀 Portfólio
+# 🚀 Portfólio Pessoal
 
-> Site para mostrar os meus trabalhos realizados na faculdade e na carreira.
+Site desenvolvido para apresentar os projetos que venho construindo na faculdade e na carreira em tecnologia.
 
-Este projeto foi desenvolvido para praticar conceito de desenvolvimento web front-end.
+O objetivo foi colocar em prática conceitos de desenvolvimento front-end, desde a estruturação da interface até a estilização e responsividade da página.
 
-## 🛠 Tecnologias
+## Tecnologias utilizadas
 
-As seguintes ferramentas foram usadas na construção do projeto:
+- **Linguagens:** HTML5, CSS3, JavaScript
+- **Design:** Figma (prototipação da interface)
+- **Ferramenta:** Visual Studio Code
 
-- **Linguagem:** JavaScript / HTML5, CSS3.
-- **Design:** Figma.
-- **Ferramenta:** Visual Studio Code.
+## Funcionalidades
 
-## ✨ Funcionalidades
+- Acesso direto aos repositórios dos projetos no GitHub
+- Links para redes sociais (GitHub e LinkedIn)
 
-- Acessar os repositórios dos projetos.
-- Entrar em contato.
-- Visitar minhas redes sociais (github e linkedin).
+## Acesse o projeto
+
+
+## Contato
+
+- LinkedIn: [ https://www.linkedin.com/in/caua-oliveira-7246b6227?utm_source=share_via&utm_content=profile&utm_medium=member_android ]
+
+- GitHub: [@oCaua](#)
