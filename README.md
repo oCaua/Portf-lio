@@ -20,6 +20,6 @@ O objetivo foi colocar em prática conceitos de desenvolvimento front-end, desde
 
 ## Contato
 
-- LinkedIn: [ https://www.linkedin.com/in/caua-oliveira-7246b6227?utm_source=share_via&utm_content=profile&utm_medium=member_android ]
+- LinkedIn: [https://www.linkedin.com/in/caua-oliveira-7246b6227?utm_source=share_via&utm_content=profile&utm_medium=member_android]
 
 - GitHub: [@oCaua](#)
